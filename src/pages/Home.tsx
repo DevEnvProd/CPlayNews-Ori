@@ -7,7 +7,7 @@ import { ExternalLink, Zap, Flame, Terminal } from 'lucide-react';
 const ArticleCard = ({ article, featured = false }: { article: any, featured?: boolean, key?: React.Key }) => {
   return (
     <Link to={`/news/${article.slug}`} className={`block group ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}>
-      <div className={`bg-black/60 transition-colors duration-300 h-full flex flex-col relative overflow-hidden ${article.category === 'casino' ? 'neon-border-pink' : 'neon-border-cyan'}`}>
+      <div className={`bg-black/60 transition-colors duration-300 h-full flex flex-col relative overflow-hidden ${article.category === 'winbox-casino' ? 'neon-border-pink' : 'neon-border-cyan'}`}>
         <div className="corner-pixel top-left" />
         <div className="corner-pixel top-right" />
         <div className="corner-pixel bottom-left" />
@@ -20,9 +20,9 @@ const ArticleCard = ({ article, featured = false }: { article: any, featured?: b
             alt={article.title} 
             className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500 scale-100 group-hover:scale-105"
           />
-          {article.category === 'casino' && (
+          {article.category === 'winbox-casino' && (
              <div className="absolute top-2 right-2 z-20 bg-neon-pink text-void font-mono text-[10px] font-bold px-2 py-1 uppercase drop-shadow-[0_0_8px_rgba(255,0,255,0.8)]">
-               CASINO
+               WINBOX CASINO
              </div>
           )}
           {article.isBreaking && (
@@ -69,15 +69,15 @@ export default function Home() {
           {/* Platinum Casino Ad block */}
           <div className="bg-pink-950/10 neon-border-pink p-5 relative flex flex-col group h-1/2">
              <div className="flex items-center gap-2 text-neon-pink font-mono text-xs mb-3 font-bold uppercase drop-shadow-[0_0_8px_rgba(255,0,255,0.8)] border-b border-pink-900/50 pb-2">
-               <Flame size={14} /> PLATINUM CASINO SPECIAL
+               <Flame size={14} /> WINBOX CASINO SPECIAL
              </div>
              <div className="flex-1 space-y-4">
                <div className="p-3 bg-black/40 border border-pink-900/30">
-                 <h4 className="font-orbitron text-xl mb-1 leading-tight uppercase text-white">Platinum Casino 100% Welcome Bonus</h4>
+                 <h4 className="font-orbitron text-xl mb-1 leading-tight uppercase text-white">Winbox Casino 100% Welcome Bonus</h4>
                  <p className="font-inter text-pink-400 text-xs mb-4">Access the highest stakes in the metaverse. Provably fair, unmatched RTP.</p>
-                 <a href="#" className="inline-flex items-center text-neon-pink font-bold font-mono text-xs uppercase hover:text-white transition-colors">
-                   INITIALIZE <ExternalLink size={14} className="ml-1" />
-                 </a>
+                 <Link to="/category/winbox-casino" className="inline-flex items-center text-neon-pink font-bold font-mono text-xs uppercase hover:text-white transition-colors">
+                   INITIALIZE →
+                 </Link>
                </div>
              </div>
           </div>

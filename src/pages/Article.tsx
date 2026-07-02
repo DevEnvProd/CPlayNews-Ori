@@ -23,7 +23,7 @@ export default function Article() {
         <div className="mb-6 font-mono text-xs uppercase flex items-center gap-2">
            <span className="bg-gray-800 text-neon-cyan px-2 py-1">SYS_AUTH: {article.author}</span>
            <span className="text-gray-500">{article.date}</span>
-           <span className={`px-2 py-1 ml-auto font-bold ${article.category === 'casino' ? 'bg-neon-pink text-void' : 'border border-gray-700 text-gray-400'}`}>
+           <span className={`px-2 py-1 ml-auto font-bold ${article.category === 'winbox-casino' ? 'bg-neon-pink text-void' : 'border border-gray-700 text-gray-400'}`}>
              DIR: {article.category}
            </span>
         </div>
@@ -56,14 +56,14 @@ export default function Article() {
           dangerouslySetInnerHTML={{ __html: article.content }}
         />
 
-        {article.category === 'casino' && (
+        {article.category === 'winbox-casino' && (
           <div className="bg-gradient-to-r from-neon-pink/20 to-transparent p-[1px] mb-10">
             <div className="bg-void p-8 text-center flex flex-col items-center border border-neon-pink/30">
               <h3 className="font-orbitron font-bold text-2xl text-white mb-2 uppercase">Ready to enter the grid?</h3>
-              <p className="font-inter text-gray-400 mb-6 max-w-md">Join Platinum Casino today and claim your 100% deposit bonus on all major crypto assets.</p>
-              <a href="#" className="bg-neon-pink text-void font-bold font-mono text-sm px-8 py-3 uppercase hover:shadow-neon-pink transition-shadow flex items-center gap-2">
-                PLAY PLATINUM CASINO <ExternalLink size={16} />
-              </a>
+              <p className="font-inter text-gray-400 mb-6 max-w-md">Join Winbox Casino today and claim your 100% deposit bonus on all major crypto assets.</p>
+              <Link to="/category/winbox-casino" className="bg-neon-pink text-void font-bold font-mono text-sm px-8 py-3 uppercase hover:shadow-neon-pink transition-shadow flex items-center gap-2">
+                PLAY WINBOX CASINO →
+              </Link>
             </div>
           </div>
         )}

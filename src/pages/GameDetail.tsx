@@ -96,13 +96,13 @@ export default function GameDetail() {
             </button>
           </div>
           
-          {game.slug === 'platinum-casino' && (
+          {game.slug === 'winbox-casino' && (
              <div className="bg-neon-pink text-void border border-neon-pink p-6 text-center shadow-neon-pink">
                 <h3 className="font-orbitron font-bold text-xl mb-2 uppercase">Official Partner</h3>
                 <p className="font-mono text-xs mb-4 font-bold">100% DEPOSIT BONUS ACTIVE</p>
-                <button className="w-full border-2 border-void text-void hover:bg-void hover:text-neon-pink font-bold font-mono text-sm py-2 transition-all uppercase">
+                <Link to="/category/winbox-casino" className="block w-full border-2 border-void text-void hover:bg-void hover:text-neon-pink font-bold font-mono text-sm py-2 transition-all uppercase">
                   ACCESS PORTAL
-                </button>
+                </Link>
              </div>
           )}
         </aside>

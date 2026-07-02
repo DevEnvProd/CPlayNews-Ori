@@ -16,7 +16,7 @@ export default function About() {
       <section className="prose prose-invert prose-p:font-inter prose-p:text-gray-400 prose-headings:font-orbitron prose-headings:uppercase mx-auto">
         <h2>Mission Directive</h2>
         <p>
-          CRYPTO PLAY NEWS operates at the bleeding edge of Web3 gaming and decentralized casinos. 
+          CRYPTO PLAY NEWS operates at the bleeding edge of Web3 gaming and decentralized winbox casinos. 
           Our protocol is simple: deliver unfiltered, high-fidelity signals on the play-to-earn ecosystem, 
           metaverse developments, and digital asset markets.
         </p>
@@ -34,7 +34,7 @@ export default function About() {
         <h2>Operational Sectors</h2>
         <ul>
           <li><strong>GAMES:</strong> Reviews, patch notes, and meta analysis for on-chain games.</li>
-          <li><strong>CASINO:</strong> The latest updates in provably fair algorithms, high-roller tables, and platform launches. <em>Note: Operations supported by our partner, Platinum Casino.</em></li>
+          <li><strong>WINBOX CASINO:</strong> The latest updates in provably fair algorithms, high-roller tables, and platform launches. <em>Note: Operations supported by Winbox Casino.</em></li>
           <li><strong>TOKENS:</strong> Technical breakdown of utility tokens and game economies.</li>
         </ul>
 

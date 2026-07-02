@@ -46,8 +46,8 @@ const Header = () => {
              <Link to="/category/games" className="font-mono text-sm text-gray-300 hover:text-neon-cyan hover:text-glow-cyan transition-all flex items-center gap-2">
                 <Gamepad2 size={16} /> GAMES
              </Link>
-             <Link to="/category/casino" className="font-mono text-sm text-neon-pink hover:text-white drop-shadow-[0_0_8px_rgba(255,0,255,0.8)] transition-all flex items-center gap-2">
-                <Ticket size={16} /> CASINO
+             <Link to="/category/winbox-casino" className="font-mono text-sm text-neon-pink hover:text-white drop-shadow-[0_0_8px_rgba(255,0,255,0.8)] transition-all flex items-center gap-2">
+                <Ticket size={16} /> WINBOX CASINO
              </Link>
              <Link to="/category/tokens" className="font-mono text-sm text-gray-300 hover:text-neon-cyan hover:text-glow-cyan transition-all flex items-center gap-2">
                 <Coins size={16} /> TOKENS
@@ -85,14 +85,14 @@ const Footer = () => {
             <h3 className="font-orbitron text-white mb-4">CATEGORIES</h3>
             <ul className="space-y-2 font-mono text-xs text-gray-400">
               <li><Link to="/category/games" className="hover:text-neon-cyan">Game News</Link></li>
-              <li><Link to="/category/casino" className="hover:text-neon-pink">Crypto Casino</Link></li>
+              <li><Link to="/category/winbox-casino" className="hover:text-neon-pink">Winbox Casino</Link></li>
               <li><Link to="/category/tokens" className="hover:text-neon-green">Token Analysis</Link></li>
             </ul>
           </div>
           <div>
              <h3 className="font-orbitron text-white mb-4">PARTNERS</h3>
              <ul className="space-y-2 font-mono text-xs text-gray-400">
-              <li><a href="#" className="flex items-center gap-1 hover:text-neon-pink"><ExternalLink size={12}/> Platinum Casino</a></li>
+              <li><Link to="/category/winbox-casino" className="hover:text-neon-pink">Winbox Casino</Link></li>
               <li><Link to="/about" className="hover:text-neon-cyan">Advertise With Us</Link></li>
             </ul>
           </div>

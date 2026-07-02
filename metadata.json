@@ -1,6 +1,6 @@
 {
-  "name": "CRYPTO PLAY NEWS",
-  "description": "Your daily dose of blockchain gaming.",
+  "name": "Crypto Play News",
+  "description": "Your daily dose of blockchain gaming, winbox casino updates, GameFi, and metaverse news.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

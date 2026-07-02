@@ -5,7 +5,7 @@ import { Terminal, Zap } from 'lucide-react';
 
 const CategoryCard = ({ article }: { article: any; key?: React.Key }) => {
   return (
-    <Link to={`/news/${article.slug}`} className={`flex flex-col sm:flex-row gap-6 bg-black/40 ${article.category === 'casino' ? 'neon-border-pink hover:bg-pink-900/10' : 'neon-border-cyan hover:bg-cyan-900/10'} transition-colors duration-300 p-4 group relative`}>
+    <Link to={`/news/${article.slug}`} className={`flex flex-col sm:flex-row gap-6 bg-black/40 ${article.category === 'winbox-casino' ? 'neon-border-pink hover:bg-pink-900/10' : 'neon-border-cyan hover:bg-cyan-900/10'} transition-colors duration-300 p-4 group relative`}>
       <div className="corner-pixel top-left" />
       <div className="corner-pixel top-right" />
       <div className="corner-pixel bottom-left" />
@@ -53,7 +53,7 @@ export default function Category() {
   let accentBorder = 'border-neon-cyan';
   let bgGlow = 'bg-neon-cyan/5';
   
-  if (cat === 'casino') {
+  if (cat === 'winbox-casino') {
     accentColor = 'text-neon-pink';
     accentBorder = 'border-neon-pink';
     bgGlow = 'bg-neon-pink/5';
@@ -85,14 +85,6 @@ export default function Category() {
           </div>
         )}
       </div>
-{/* 
-      {cat === 'casino' && (
-        <div className="mt-12 bg-neon-pink text-void p-8 flex flex-col items-center justify-center text-center">
-           <h3 className="font-orbitron font-bold text-2xl mb-2">PLATINUM CASINO EXCLUSIVE DEALS</h3>
-           <p className="font-mono text-sm mb-6 max-w-lg shadow">Unlock VIP status by connecting your Web3 wallet today.</p>
-           <button className="border-2 border-void text-void font-bold font-mono px-6 py-2 hover:bg-void hover:text-neon-pink transition">SECURE LINK</button>
-        </div>
-      )} */}
     </div>
   );
 }
